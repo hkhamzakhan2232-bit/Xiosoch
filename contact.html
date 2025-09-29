@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <title>Contact Us - Web Design Learning Platform</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="../assets/images/Logo.svg" alt="Web Design Platform Logo" />
+    </div>
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="testimonials.html">Testimonial</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contact.html" class="btn light active">Contact</a></li>
+        <li><a href="login.html" class="btn dark">Login</a></li>
+      </ul>
+    </nav>
+    </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <article class="contact-form-card">
+          <h2>Send us a Message</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="billing">Billing Question</option>
+                <option value="feedback">Feedback</option>
+                <option value="partnership">Partnership</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" style="display: none;">⏳</span>
+            </button>
+          </form>
+        </article>
+
+        <aside class="contact-info-card">
+          <h2>Contact Information</h2>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">📧</div>
+              <div class="method-content">
+                <h3>Email Us</h3>
+                <p>hello@webdesignlearning.com</p>
+                <span>We'll respond within 24 hours</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">📞</div>
+              <div class="method-content">
+                <h3>Call Us</h3>
+                <p>+1 (555) 123-4567</p>
+                <span>Mon-Fri 9AM-6PM EST</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">💬</div>
+              <div class="method-content">
+                <h3>Live Chat</h3>
+                <p>Available 24/7</p>
+                <span>Get instant help</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="method-icon">📍</div>
+              <div class="method-content">
+                <h3>Visit Us</h3>
+                <p>123 Learning Street<br>Education City, EC 12345</p>
+                <span>By appointment only</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="social-buttons">
+              <a href="#" class="social-btn">📘 Facebook</a>
+              <a href="#" class="social-btn">🐦 Twitter</a>
+              <a href="#" class="social-btn">📷 Instagram</a>
+              <a href="#" class="social-btn">💼 LinkedIn</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><h3>How do I get started with the courses?</h3></summary>
+            <p>Create an account, choose your path, and begin with beginner-friendly tutorials.</p>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Do I need any prior experience?</h3></summary>
+            <p>No experience needed! We start from the basics and build up.</p>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Are the courses self-paced?</h3></summary>
+            <p>Yes, learn at your own speed and schedule.</p>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Do you offer certificates?</h3></summary>
+            <p>Yes, certificates are awarded upon course completion.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+/* Index.html */
+.index .hero-container {
+    padding: 32px;
+    position: relative;
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+  }
+  
+  .index .hero-text {
+    position: absolute;
+    right: 10%;
+    width: 25%;
+    z-index: 5;
+    text-align: left;
+  }
+  
+  .index .hero-text h1 {
+    font-family: "Oleo Script Swash Caps", "Arial", sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .index .hero-text p.subheading {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    max-width: 100%;
+    margin-bottom: 24px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .index .features-section {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Register.html and Login.html */
+  .register .form-container,
+  .login .form-container {
+    max-width: 600px;
+    margin: 32px auto;
+    padding: 32px;
+    text-align: center;
+    background: #2d3748;
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    display: block;
+    visibility: visible;
+  }
+  
+  .register .form-container .section-title,
+  .login .form-container .section-title {
+    margin-bottom: 32px;
+    opacity: 1;
+  }
+  
+  .register .form-group .btn,
+  .login .form-group .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 12px auto;
+  }
+  
+  .register .form-row,
+  .login .form-row {
+    justify-content: center;
+  }
+  
+  .register .form-group .or-divider,
+  .login .form-group .or-divider {
+    margin: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+    position: relative;
+  }
+  
+  .register .form-group .or-divider::before,
+  .register .form-group .or-divider::after,
+  .login .form-group .or-divider::before,
+  .login .form-group .or-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: var(--input-border);
+  }
+  
+  .register .form-group .or-divider::before,
+  .login .form-group .or-divider::before {
+    left: 0;
+  }
+  
+  .register .form-group .or-divider::after,
+  .login .form-group .or-divider::after {
+    right: 0;
+  }
+  
+  /* Downloads.html */
+  .downloads .resources-section {
+    padding: 32px;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .downloads .resources-container {
+    display: block;
+    visibility: visible;
+  }
+  
+  .downloads .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    visibility: visible;
+  }
+  
+  .downloads .resource-card,
+  .downloads .download-card,
+  .downloads .download-item,
+  .downloads .premium-card {
+    background: #4a5568;
+    border-color: #6b7280;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .downloads .resource-card p.file-info,
+  .downloads .download-card p.file-info,
+  .downloads .download-item p.file-info,
+  .downloads .premium-card p.file-info {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+    display: block;
+    visibility: visible;
+  }
+  
+  .downloads .resource-card p.file-info span,
+  .downloads .download-card p.file-info span,
+  .downloads .download-item p.file-info span,
+  .downloads .premium-card p.file-info span {
+    color: var(--primary-blue);
+    font-weight: 600;
+  }
+  
+  .downloads .download-card button.download-btn,
+  .downloads .download-item button.download-btn,
+  .downloads .premium-card button.premium-btn {
+    margin-top: 12px;
+    width: 100%;
+    max-width: 200px;
+    display: inline-flex;
+    visibility: visible;
+  }
+  
+  /* Testimonials.html */
+  .testimonials .testimonials-section {
+    padding: 32px;
+    background: var(--gradient-accent);
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .testimonials .testimonial-card {
+    padding: 24px;
+    margin-bottom: 16px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .testimonials .stats .stat-card {
+    background: #4a5568;
+    border-color: #6b7280;
+    display: block;
+    visibility: visible;
+  }
+  
+  .testimonials .stats .stat-card h3 {
+    font-size: 32px;
+  }
+  
+  /* Features.html */
+  .features .features-section {
+    padding: 32px;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .features .path-grid .path-card {
+    background: #4a5568;
+    border-color: #6b7280;
+    display: block;
+    visibility: visible;
+  }
+  
+  .features .path-card p.duration {
+    font-size: 12px;
+    color: var(--primary-green);
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  
+  .features .code-sample {
+    background: #1a202c;
+    color: var(--text-primary);
+    border-color: #4b5563;
+    padding: 20px;
+    font-family: "Roboto", monospace;
+    font-size: 14px;
+    display: block;
+    visibility: visible;
+  }
+  
+  /* About.html */
+  .about .about-section {
+    padding: 32px;
+    display: block;
+    visibility: visible;
+  }
+  
+  .about .team-members .team-member {
+    background: #4a5568;
+    border-color: #6b7280;
+    display: block;
+    visibility: visible;
+  }
+  
+  .about .team-members .team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 2px solid var(--input-border);
+  }
+  
+  .about .stats .stat-card {
+    background: #4a5568;
+    border-color: #6b7280;
+    display: block;
+    visibility: visible;
+  }
+  
+  /* Contact.html */
+  .contact .contact-section {
+    padding: 32px;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    display: block;
+    visibility: visible;
+  }
+  
+  .contact .form-container {
+    max-width: 600px;
+    margin: 32px auto;
+    background: #2d3748;
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    padding: 32px;
+    display: block;
+    visibility: visible;
+  }
+  
+  .contact .contact-info {
+    display: block;
+    visibility: visible;
+  }
+  
+  .contact .contact-info .contact-card {
+    background: #4a5568;
+    border-color: #6b7280;
+    display: block;
+    visibility: visible;
+  }
+  
+  .contact .faq {
+    display: block;
+    visibility: visible;
+  }
+  
+  .contact .faq .faq-item {
+    background: #4a5568;
+    border-color: #6b7280;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    display: block;
+    visibility: visible;
+  }
+  
+  .contact .faq .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .contact .faq .faq-answer {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+  }
+  
+  .contact .faq .faq-toggle {
+    float: right;
+    font-size: 18px;
+    color: var(--primary-blue);
+  }
+  
+  .contact .faq .faq-question {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-blue);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .index .hero-container {
+      padding: 16px;
+      min-height: calc(100vh - 60px);
+    }
+  
+    .index .hero-text {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      right: auto;
+    }
+  
+    .index .hero-text h1 {
+      font-size: 32px;
+    }
+  
+    .register .form-container,
+    .login .form-container,
+    .contact .form-container {
+      padding: 16px;
+      margin: 16px auto;
+    }
+  
+    .downloads .resources-section,
+    .testimonials .testimonials-section,
+    .features .features-section,
+    .about .about-section,
+    .contact .contact-section {
+      padding: 16px;
+    }
+  
+    .testimonials .stats .stat-card h3 {
+      font-size: 24px;
+    }
+  
+    .features .path-grid .path-card,
+    .about .team-members .team-member,
+    .contact .contact-info .contact-card,
+    .downloads .category-grid .resource-card,
+    .downloads .category-grid .download-card,
+    .downloads .category-grid .download-item,
+    .downloads .category-grid .premium-card,
+    .about .stats .stat-card,
+    .contact .faq .faq-item {
+      padding: 12px;
+    }
+  }

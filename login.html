@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Login - Web Design Learning Platform</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- navbar start -->
+      <nav>
+        <div class="logo">
+          <img src="../assets/images/Logo.svg" alt="logo" />
+        </div>
+
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="testimonials.html">Testimonial</a>
+          </li>
+          <li>
+            <a href="features.html">Features</a>
+          </li>
+          <li>
+            <a href="downloads.html">Downloads</a>
+          </li>
+          <li>
+            <a href="contact.html" class="btn light">Contact</a>
+          </li>
+          <li>
+            <a href="login.html" class="btn dark active">Login</a>
+          </li>
+        </ul>
+        <div class="mobile-menu active">
+          <img src="../assets/images/icon-cross.svg" alt="nav-icons" />
+        </div>
+        <div class="mobile-close">
+          <img src="../assets/images/icon-cross.svg" alt="nav-icons" />
+        </div>
+        <!-- mobile nav -->
+        <nav class="mobile-navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="testimonials.html">Testimonial</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="contact.html" class="btn light">Contact</a></li>
+            <li><a href="login.html" class="btn dark active">Login</a></li>
+          </ul>
+        </nav>
+      </nav>
+      <!-- navbar ends -->
+
+      <!-- Login Section -->
+      <section class="auth-section">
+        <div class="auth-container">
+          <div class="auth-card">
+            <div class="auth-header">
+              <h1>Welcome Back!</h1>
+              <p>Sign in to continue your learning journey</p>
+            </div>
+
+            <form class="auth-form" id="loginForm">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="Enter your email"
+                  required
+                />
+                <div class="input-icon">📧</div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  placeholder="Enter your password"
+                  required
+                />
+                <div class="input-icon">🔒</div>
+                <button type="button" class="password-toggle" id="passwordToggle">
+                  👁️
+                </button>
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="rememberMe" name="rememberMe">
+                  <span class="checkmark"></span>
+                  Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+              </div>
+
+              <button type="submit" class="auth-btn">
+                <span class="btn-text">Sign In</span>
+                <span class="btn-loader" style="display: none;">⏳</span>
+              </button>
+
+              <div class="divider">
+                <span>or</span>
+              </div>
+
+              <div class="social-login">
+                <button type="button" class="social-btn google">
+                  <span class="social-icon">🔍</span>
+                  Continue with Google
+                </button>
+                <button type="button" class="social-btn github">
+                  <span class="social-icon">🐙</span>
+                  Continue with GitHub
+                </button>
+              </div>
+
+              <div class="auth-footer">
+                <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="auth-benefits">
+            <h3>Why join our platform?</h3>
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-content">
+                  <h4>Personalized Learning</h4>
+                  <p>Track your progress and get customized recommendations</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">🏆</div>
+                <div class="benefit-content">
+                  <h4>Earn Certificates</h4>
+                  <p>Get recognized for your achievements</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">👥</div>
+                <div class="benefit-content">
+                  <h4>Join Community</h4>
+                  <p>Connect with fellow learners and experts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+   
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/auth.js"></script>
+  </body>
+</html>

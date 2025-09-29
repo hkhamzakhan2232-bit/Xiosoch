@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Register - Web Design Learning Platform</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- navbar start -->
+      <nav>
+        <div class="logo">
+          <img src="../assets/images/Logo.svg" alt="logo" />
+        </div>
+
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="testimonials.html">Testimonial</a>
+          </li>
+          <li>
+            <a href="features.html">Features</a>
+          </li>
+          <li>
+            <a href="downloads.html">Downloads</a>
+          </li>
+          <li>
+            <a href="contact.html" class="btn light">Contact</a>
+          </li>
+          <li>
+            <a href="login.html" class="btn dark">Login</a>
+          </li>
+        </ul>
+        <div class="mobile-menu active">
+          <img src="../assets/images/icon-cross.svg" alt="nav-icons" />
+        </div>
+        <div class="mobile-close">
+          <img src="../assets/images/icon-cross.svg" alt="nav-icons" />
+        </div>
+        <!-- mobile nav -->
+        <nav class="mobile-navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="testimonials.html">Testimonial</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="contact.html" class="btn light">Contact</a></li>
+            <li><a href="login.html" class="btn dark">Login</a></li>
+          </ul>
+        </nav>
+      </nav>
+      <!-- navbar ends -->
+
+      <!-- Register Section -->
+      <section class="auth-section">
+        <div class="auth-container">
+          <div class="auth-card">
+            <div class="auth-header">
+              <h1>Join Our Community!</h1>
+              <p>Start your web design learning journey today</p>
+            </div>
+
+            <form class="auth-form" id="registerForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    placeholder="Enter your first name"
+                    required
+                  />
+                  <div class="input-icon">👤</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input 
+                    type="text" 
+                    id="lastName" 
+                    name="lastName" 
+                    placeholder="Enter your last name"
+                    required
+                  />
+                  <div class="input-icon">👤</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="Enter your email"
+                  required
+                />
+                <div class="input-icon">📧</div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  placeholder="Create a strong password"
+                  required
+                />
+                <div class="input-icon">🔒</div>
+                <button type="button" class="password-toggle" id="passwordToggle">
+                  👁️
+                </button>
+                <div class="password-strength" id="passwordStrength">
+                  <div class="strength-bar">
+                    <div class="strength-fill"></div>
+                  </div>
+                  <span class="strength-text">Password strength</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input 
+                  type="password" 
+                  id="confirmPassword" 
+                  name="confirmPassword" 
+                  placeholder="Confirm your password"
+                  required
+                />
+                <div class="input-icon">🔒</div>
+                <button type="button" class="password-toggle" id="confirmPasswordToggle">
+                  👁️
+                </button>
+              </div>
+
+              <div class="form-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience" name="experience" required>
+                  <option value="">Select your experience level</option>
+                  <option value="beginner">Beginner - Just starting out</option>
+                  <option value="intermediate">Intermediate - Some experience</option>
+                  <option value="advanced">Advanced - Looking to refine skills</option>
+                </select>
+                <div class="input-icon">📊</div>
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <span class="checkmark"></span>
+                  I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="terms-link">Privacy Policy</a>
+                </label>
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <span class="checkmark"></span>
+                  Subscribe to our newsletter for updates and tips
+                </label>
+              </div>
+
+              <button type="submit" class="auth-btn">
+                <span class="btn-text">Create Account</span>
+                <span class="btn-loader" style="display: none;">⏳</span>
+              </button>
+
+              <div class="divider">
+                <span>or</span>
+              </div>
+
+              <div class="social-login">
+                <button type="button" class="social-btn google">
+                  <span class="social-icon">🔍</span>
+                  Continue with Google
+                </button>
+                <button type="button" class="social-btn github">
+                  <span class="social-icon">🐙</span>
+                  Continue with GitHub
+                </button>
+              </div>
+
+              <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Sign in here</a></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="auth-benefits">
+            <h3>What you'll get as a member:</h3>
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-content">
+                  <h4>Personalized Dashboard</h4>
+                  <p>Track your progress and continue where you left off</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">📚</div>
+                <div class="benefit-content">
+                  <h4>Full Access to Courses</h4>
+                  <p>Unlock all tutorials and premium content</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">🏆</div>
+                <div class="benefit-content">
+                  <h4>Earn Certificates</h4>
+                  <p>Get recognized for your achievements</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">👥</div>
+                <div class="benefit-content">
+                  <h4>Join Community</h4>
+                  <p>Connect with fellow learners and experts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/auth.js"></script>
+  </body>
+</html>
